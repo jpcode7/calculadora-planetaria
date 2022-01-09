@@ -1,0 +1,249 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --morado:rgb(95, 1, 95);
+    --azulClaro:rgb(5, 127, 226);
+    --azulFuerte:rgb(2, 101, 182);
+    --verde: seagreen;
+}
+@font-face {
+    font-family: especial;
+    src: url(KidsOnTheMoon.ttf);
+}
+@font-face {
+    font-family: subtitulos;
+    src: url(Little\ Comet\ Demo\ Version.otf);
+}
+body{
+    background-image: url("fondo.png");
+    background-size: 800px;
+
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Caratula{
+
+    width: 70vw;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border:solid 10px var(--morado);
+    border-radius: 20px;
+    
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+    color: var(--morado);
+    font-family: especial;
+    font-size: 45px;
+}
+
+h2{
+    text-align: center;
+    color: var(--verde);
+    font-family:subtitulos
+}
+
+h3{
+    width: 25%;
+    font-family: calibri;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+}
+.cont-btn-p{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-btn-p>a{
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-family: especial;
+    background-color: var(--azulClaro);
+    border-radius: 15px;
+    border:solid 5px var(--azulFuerte);
+    transition: linear 0.1s;
+}
+.cont-btn-p>a:active{
+   transform: scale(0.9);
+
+   
+}
+
+.autor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.marca{
+    display: flex;
+    align-items: flex-end;
+    font-family: calibri;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.marca img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+.socialnetwork{
+    display: flex;
+    align-items: flex-end;
+
+}
+.socialnetwork a{
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: .25s;
+}
+
+.socialnetwork a:hover{
+    transform: scale(1.5);
+}
+
+/*----------------Menu Planetas--------------*/
+
+#Cont-Menu-Plan{
+    width: 100vw;
+}
+
+#Cont-Btn-RC{
+    display: flex;
+    justify-content: space-between;
+}
+#Cont-Btn-RC>a:hover{
+    transform: scale(1.1);
+}
+#Cont-Btn-RC>a:active{
+    transform: scale(0.9);
+}
+
+#Btn-Reg{
+    margin: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--verde);
+    border-radius:10px;
+    border-style: none;
+    border:5px solid #fff;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: calibri;
+    cursor:pointer;
+    text-decoration: none;
+    transition: linear 0.1s;
+}
+
+
+
+#Btn-Cer{
+    margin:50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(153, 3, 3);
+    border-radius: 50px;
+    border-style: none;
+    border:5px solid #fff;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: calibri;
+    cursor:pointer;
+    text-decoration: none;
+    transition: linear 0.1s;
+}
+
+#Menu-Plan{
+    
+    width: 70%;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.9);
+    grid-gap: 50px;
+    border:solid 10px var(--morado);
+    border-radius: 20px;
+    
+    
+}
+
+.planetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 250px;
+    max-width: 250px;
+    
+}
+
+.planetas>img:hover{
+    transform: scale(1.1);
+}
+
+.planetas>img:active{
+    transform: scale(0.9);
+}
+
+.planetas>img{
+
+    max-height: 200px;
+    cursor: pointer;
+    transition: linear 0.1s;
+}
+
+#Center{
+    width: 100%;
+         display: flex;
+         justify-content: center;
+         margin-bottom: 20px;
+     }
+
+@media screen and (max-width:1366px){
+  
+}     
+
+@media screen and (max-width:720px){
+    #Caratula{
+        padding: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .cont-btn-p>a{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+}
